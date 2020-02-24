@@ -58,13 +58,16 @@ public class Space extends World
             int a = Greenfoot.getRandomNumber(155);
             background.setColor(new Color(a + 40, a , a));
             background.fillOval(x, y, size, size);
+            
+
         }
     }
 
     /**
      * This method is called when the game is over to display the final score.
      */
-    public void gameOver() 
+    public void gameOver()
+    
     {
         // TODO: show the score board here. Currently missing.
     }
