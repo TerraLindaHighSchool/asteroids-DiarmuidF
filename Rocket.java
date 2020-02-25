@@ -24,6 +24,8 @@ public class Rocket extends SmoothMover
     public Rocket()
     {
         reloadDelayCount = 5;
+        addToVelocity(new Vector(getRotation(), .7));
+        
     }
 
     /**
@@ -35,6 +37,7 @@ public class Rocket extends SmoothMover
         checkKeys();
         reloadDelayCount++;
         move();
+        
     }
     
     /**
@@ -52,7 +55,7 @@ public class Rocket extends SmoothMover
         }
         if (Greenfoot.isKeyDown("right"))
         {
-            turn(-5);
+            turn(5);
         }
         if (Greenfoot.isKeyDown("up"))
         {
